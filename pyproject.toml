@@ -1,0 +1,30 @@
+[project]
+name = "burning-ship"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    # Love
+    "numpy>=2.2.5",
+    # https://numba.readthedocs.io/
+    "numba>=0.61.2",
+    # Intel SVML (https://numba.readthedocs.io/en/stable/user/installing.html)
+    "intel-cmplr-lib-rt>=2025.1.0; platform_machine == 'x86_64' and sys_platform != 'darwin'",
+    # "Pillow-SIMD>=9.5.0.post2",
+    "pillow>=11.2.1",
+    # https://github.com/imageio/imageio
+    # "imageio>=2.37.0",
+    # https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pyav.html
+    # "av>=14.3.0",
+]
+
+
+[dependency-groups]
+dev = [
+    "colorama>=0.4.6",
+    "ipython>=9.1.0",
+    "pygments>=2.19.1",
+    "pyyaml>=6.0.2",
+    "ruff>=0.11.6",
+]
